@@ -1,1 +1,26 @@
-/*# sourceMappingURL=app.css.map */
+.title-1 {
+  font-size: calc(1.525rem + 3.3vw);
+}
+@media (min-width: 1200px) {
+  .title-1 {
+    font-size: 4rem;
+  }
+}
+
+.title-2 {
+  font-size: calc(1.425rem + 2.1vw);
+}
+@media (min-width: 1200px) {
+  .title-2 {
+    font-size: 3rem;
+  }
+}
+
+.title-3 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  .title-3 {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=app.css.map */
