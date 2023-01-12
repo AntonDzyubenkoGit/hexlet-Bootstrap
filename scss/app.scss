@@ -1,11 +1,6 @@
 @import "../node_modules/rfs/scss";
+//@import "../node_modules/bootstrap/scss/bootstrap";
 
 .title-1 {
   @include rfs(4rem, font-size);
-}
-.title-2 {
-  @include rfs(3rem, font-size);
-}
-.title-3 {
-  @include rfs(2rem, font-size);
 }
