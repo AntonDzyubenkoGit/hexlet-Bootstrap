@@ -1,6 +1,6 @@
-@import "../node_modules/rfs/scss";
-//@import "../node_modules/bootstrap/scss/bootstrap";
+$enable-shadows: true;
+$font-family-serif: "Times New Roman", Times, serif;
 
-.title-1 {
-  @include rfs(4rem, font-size);
-}
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "./_citation";
+@import "./divider";

@@ -1,0 +1,33 @@
+.divider {
+  display: flex;
+  align-items: center;
+  color: $border-color;
+
+  &-start::after {
+    content: '';
+    @include make-col;
+    border-top: $border-width solid $border-color;
+    margin-left: map-get($spacers, 4);
+  }
+
+  &-end::before {
+    content: "";
+    @include make-col;
+    margin-right: map-get($spacers, 4);
+    border-top: $border-width solid $border-color;
+  }
+
+  &-center::before {
+    content: "";
+    @include make-col;
+    margin-right: map-get($spacers, 4);
+    border-top: $border-width solid $border-color;
+  }
+
+  &-center::after {
+    content: "";
+    @include make-col;
+    margin-left: map-get($spacers, 4);
+    border-top: $border-width solid $border-color;
+  }
+}
