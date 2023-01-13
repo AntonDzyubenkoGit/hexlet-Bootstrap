@@ -4,3 +4,6 @@ $font-family-serif: "Times New Roman", Times, serif;
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "./_citation";
 @import "./divider";
+@import "../node_modules/bootstrap/scss/_utilities";
+@import "./my_utilities";
+@import "../node_modules/bootstrap/scss/bootstrap-utilities";

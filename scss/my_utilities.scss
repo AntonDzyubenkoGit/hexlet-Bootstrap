@@ -1,0 +1,47 @@
+
+$utilities: map-merge(
+  $utilities,
+  (
+    //cursor my utilitie
+    "cursor":
+      (
+        property: cursor,
+        class: cursor,
+        values: pointer grab help progress,
+      ),
+    //transition my utilitie
+    "transition":
+      (
+        property: transition,
+        class: transition,
+        values: (
+          5: all 0.5s,
+          1: all 1s,
+          15: all 1.5s,
+          2: all 2s,
+        ),
+      ),
+    // add hover for shadow: variant with map-merge
+    "shadow":
+      map-merge(
+        map-get($utilities, "shadow"),
+        (
+          state: hover,
+        )
+      ),
+    // add hover for opacity
+    "opacity":
+      (
+        responsive: true,
+        state: hover,
+        property: opacity,
+        values: (
+          0: 0,
+          25: 0.25,
+          50: 0.5,
+          75: 0.75,
+          100: 1,
+        ),
+      )
+  )
+);
